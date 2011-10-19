@@ -1,4 +1,4 @@
-project=$PWD filter="Makefile *.rst *.vim *.txt *.json *.diff *.tmpl *.py *.html *.css *.js" {
+project=$PWD filter="Makefile *.rst *.vim *.txt *.json *.yaml *.diff *.tmpl *.py *.html *.css *.js" {
  Makefile
  PROJECT.rst
  README.rst
@@ -50,7 +50,7 @@ project=$PWD filter="Makefile *.rst *.vim *.txt *.json *.diff *.tmpl *.py *.html
  }
 }
 
-fiber=$VIRTUAL_ENV/lib/python2.7/site-packages/fiber filter="Makefile *.rst *.vim *.txt *.json *.diff *.tmpl *.py *.html *.css *.js" {
+fiber=$VIRTUAL_ENV/lib/python2.7/site-packages/fiber filter="Makefile *.rst *.vim *.txt *.json *.yaml *.diff *.tmpl *.py *.html *.css *.js" {
  __init__.py
  admin.py
  admin_forms.py
@@ -1587,7 +1587,7 @@ fiber=$VIRTUAL_ENV/lib/python2.7/site-packages/fiber filter="Makefile *.rst *.vi
  }
 }
 
-django=$VIRTUAL_ENV/lib/python2.7/site-packages/django filter="Makefile *.rst *.vim *.txt *.json *.diff *.tmpl *.py *.html *.css *.js" {
+django=$VIRTUAL_ENV/lib/python2.7/site-packages/django filter="Makefile *.rst *.vim *.txt *.json *.yaml *.diff *.tmpl *.py *.html *.css *.js" {
  __init__.py
  bin=bin {
   __init__.py
