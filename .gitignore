@@ -12,7 +12,7 @@
 !/stages/make_stages.py
 !/stages/requirements.txt
 !/stages/templates
-/barteryourbusiness.db
+/*.db
 /staticfiles/project.html
 /staticfiles/ckeditor
 /data
