@@ -35,10 +35,8 @@ project=$PWD filter="Makefile *.rst *.vim *.txt *.json *.diff *.tmpl *.py *.html
   make_stages.py
   templates=templates {
    apache2.conf.tmpl
-   initial_data.json.tmpl
    nginx.conf.tmpl
    patches.diff.tmpl
-   project_data.json.tmpl
    settings.py.tmpl
    wsgi.py.tmpl
   }
