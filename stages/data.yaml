@@ -44,6 +44,7 @@ stages:
     DATABASES:
       default:
         ENGINE:  sqlite3
-    domain:          localhost:  8000
+        NAME:    ''
+    domain:          localhost:8000
     ip:              127.0.0.1
     python_version:  2.7
