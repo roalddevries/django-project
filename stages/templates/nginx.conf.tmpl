@@ -54,6 +54,7 @@ server {
 
 }
 
+{{if domains}}
 # rewriting of alternative domains
 server {
     listen      {{ip}}:80;
@@ -61,3 +62,4 @@ server {
     access_log  /var/log/nginx/{{project}}.log;
     rewrite     (.*) http://{{domain}}$1 permanent;
 }
+{{endif}}
