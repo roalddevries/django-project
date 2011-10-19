@@ -1,4 +1,4 @@
-barteryourbusiness=$PWD filter="Makefile *.rst *.vim *.txt *.json *.diff *.tmpl *.py *.html *.css *.js" {
+project=$PWD filter="Makefile *.rst *.vim *.txt *.json *.diff *.tmpl *.py *.html *.css *.js" {
  Makefile
  PROJECT.rst
  README.rst
