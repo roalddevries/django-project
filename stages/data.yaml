@@ -33,10 +33,10 @@ stages:
       default:
         ENGINE:  postgresql_psycopg2
         NAME:    project
-    domain:          localhost:8000
-    ip:              127.0.0.1
-    python_version:  2.7
-    EMAIL_PORT:      27225
+    domain:          project.nl
+    domains:         [www.project.nl]
+    ip:              79.170.94.119
+    python_version:  2.5
 
   test:
     DEBUG:  True
