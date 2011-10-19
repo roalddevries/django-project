@@ -1,0 +1,44 @@
+[
+    {
+        "pk": 1, 
+        "model": "fiber.page", 
+        "fields": {
+            "rght": 4, 
+            "updated": "2011-09-27 15:28:23", 
+            "level": 0, 
+            "parent": null, 
+            "title": "main_menu", 
+            "url": "/", 
+            "template_name": "", 
+            "created": "2011-09-27 14:34:32", 
+            "mark_current_regexes": "", 
+            "redirect_page": null, 
+            "lft": 1, 
+            "protected": false, 
+            "tree_id": 1, 
+            "show_in_menu": true, 
+            "metadata": null
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "fiber.page", 
+        "fields": {
+            "rght": 3, 
+            "updated": "2011-10-06 18:35:20", 
+            "level": 1, 
+            "parent": 1, 
+            "title": "Home", 
+            "url": "", 
+            "template_name": "", 
+            "created": "2011-10-06 18:35:20", 
+            "mark_current_regexes": "", 
+            "redirect_page": null, 
+            "lft": 2, 
+            "protected": false, 
+            "tree_id": 1, 
+            "show_in_menu": true, 
+            "metadata": null
+        }
+	}
+]

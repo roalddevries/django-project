@@ -1,0 +1,7042 @@
+barteryourbusiness=$PWD filter="Makefile *.rst *.vim *.txt *.json *.diff *.tmpl *.py *.html *.css *.js" {
+ Makefile
+ PROJECT.rst
+ README.rst
+ TODO.rst
+ Session.vim
+ requirements.txt
+ __init__.py
+ manage.py
+ urls.py
+ custom=custom {
+  __init__.py
+  models.py
+  tests.py
+  views.py
+  fixtures=fixtures {
+  }
+  migrations=migrations {
+   __init__.py
+  }
+ }
+ data=data {
+ }
+ locale=locale filter="*.po" {
+  nl=nl {
+   LC_MESSAGES=LC_MESSAGES {
+    django.po
+   }
+  }
+ }
+ stages=stages {
+  Makefile
+  requirements.txt
+  __init__.py
+  make_stages.py
+  templates=templates {
+   apache2.conf.tmpl
+   initial_data.json.tmpl
+   nginx.conf.tmpl
+   patches.diff.tmpl
+   project_data.json.tmpl
+   settings.py.tmpl
+   wsgi.py.tmpl
+  }
+  current=current {
+  }
+ }
+ templates=templates {
+  404.html
+  500.html
+  base.html
+ }
+}
+
+fiber=$VIRTUAL_ENV/lib/python2.7/site-packages/fiber filter="Makefile *.rst *.vim *.txt *.json *.diff *.tmpl *.py *.html *.css *.js" {
+ __init__.py
+ admin.py
+ admin_forms.py
+ admin_urls.py
+ admin_views.py
+ app_settings.py
+ context_processors.py
+ editor.py
+ managers.py
+ middleware.py
+ models.py
+ tests.py
+ views.py
+ api=api {
+  __init__.py
+  authentication.py
+  emitters.py
+  handlers.py
+  urls.py
+ }
+ editor_definitions=editor_definitions {
+  __init__.py
+  ckeditor.py
+  markitup.py
+ }
+ migrations=migrations {
+  0001_initial.py
+  0002_auto__chg_field_image_image__chg_field_file_file.py
+  0003_auto__chg_field_contentitem_protected__add_field_page_alias_page__chg_.py
+  0004_auto__del_field_page_alias_page__add_field_page_redirect_page.py
+  0005_auto__del_field_contentitem_html__add_field_contentitem_content_markup.py
+  0006_urls2onefield.py
+  0007_auto__del_field_page_relative_url__del_field_page_named_url.py
+  0008_auto__add_field_contentitem_metadata__add_field_page_metadata.py
+  0009_auto__add_field_contentitem_template_name.py
+  __init__.py
+ }
+ static=static {
+  fiber=fiber {
+   admin=admin {
+    images=images {
+    }
+   }
+   css=css {
+    admin.css
+    df-reset.css
+    widgets.css
+    Aristo-jQuery-UI-Theme=Aristo-jQuery-UI-Theme {
+     demo.html
+     css=css {
+      Aristo=Aristo {
+       jquery-ui-1.8.5.custom.css
+       images=images {
+       }
+      }
+     }
+    }
+   }
+   images=images {
+    ckeditor=ckeditor {
+    }
+   }
+   js=js {
+    admin.js
+    fiber.ckeditor.js
+    fiber.markitup.js
+    jquery-1.5.2.js
+    jquery-1.5.2.min.js
+    jquery-ui-combobox.js
+    jquery-xqs-flyoutMenu.js
+    jquery.cookie.js
+    jquery.dataset.js
+    jquery.form-2.73.js
+    jquery.json-2.2.js
+    jquery.json-2.2.min.js
+    jquery.slugify.js
+    simple-javascript-inheritance.js
+    ckeditor-3.4=ckeditor-3.4 {
+     CHANGES.html
+     INSTALL.html
+     LICENSE.html
+     contents.css
+     ckeditor.js
+     ckeditor_basic.js
+     ckeditor_basic_source.js
+     ckeditor_source.js
+     config.js
+     adapters=adapters {
+      jquery.js
+     }
+     images=images {
+     }
+     lang=lang {
+      _translationstatus.txt
+      _languages.js
+      af.js
+      ar.js
+      bg.js
+      bn.js
+      bs.js
+      ca.js
+      cs.js
+      cy.js
+      da.js
+      de.js
+      el.js
+      en-au.js
+      en-ca.js
+      en-gb.js
+      en.js
+      eo.js
+      es.js
+      et.js
+      eu.js
+      fa.js
+      fi.js
+      fo.js
+      fr-ca.js
+      fr.js
+      gl.js
+      gu.js
+      he.js
+      hi.js
+      hr.js
+      hu.js
+      is.js
+      it.js
+      ja.js
+      km.js
+      ko.js
+      lt.js
+      lv.js
+      mn.js
+      ms.js
+      nb.js
+      nl.js
+      no.js
+      pl.js
+      pt-br.js
+      pt.js
+      ro.js
+      ru.js
+      sk.js
+      sl.js
+      sr-latn.js
+      sr.js
+      sv.js
+      th.js
+      tr.js
+      uk.js
+      vi.js
+      zh-cn.js
+      zh.js
+     }
+     plugins=plugins {
+      a11yhelp=a11yhelp {
+       dialogs=dialogs {
+        a11yhelp.js
+       }
+       lang=lang {
+        en.js
+        he.js
+       }
+      }
+      about=about {
+       dialogs=dialogs {
+        about.js
+       }
+      }
+      autogrow=autogrow {
+       plugin.js
+      }
+      clipboard=clipboard {
+       dialogs=dialogs {
+        paste.js
+       }
+      }
+      colordialog=colordialog {
+       dialogs=dialogs {
+        colordialog.js
+       }
+      }
+      dialog=dialog {
+       dialogDefinition.js
+      }
+      div=div {
+       dialogs=dialogs {
+        div.js
+       }
+      }
+      find=find {
+       dialogs=dialogs {
+        find.js
+       }
+      }
+      flash=flash {
+       dialogs=dialogs {
+        flash.js
+       }
+       images=images {
+       }
+      }
+      forms=forms {
+       dialogs=dialogs {
+        button.js
+        checkbox.js
+        form.js
+        hiddenfield.js
+        radio.js
+        select.js
+        textarea.js
+        textfield.js
+       }
+       images=images {
+       }
+      }
+      iframedialog=iframedialog {
+       plugin.js
+      }
+      image=image {
+       dialogs=dialogs {
+        image.js
+       }
+      }
+      link=link {
+       dialogs=dialogs {
+        anchor.js
+        link.js
+       }
+       images=images {
+       }
+      }
+      liststyle=liststyle {
+       dialogs=dialogs {
+        liststyle.js
+       }
+      }
+      pagebreak=pagebreak {
+       images=images {
+       }
+      }
+      pastefromword=pastefromword {
+       filter=filter {
+        default.js
+       }
+      }
+      pastetext=pastetext {
+       dialogs=dialogs {
+        pastetext.js
+       }
+      }
+      scayt=scayt {
+       dialogs=dialogs {
+        toolbar.css
+        options.js
+       }
+      }
+      showblocks=showblocks {
+       images=images {
+       }
+      }
+      smiley=smiley {
+       dialogs=dialogs {
+        smiley.js
+       }
+       images=images {
+       }
+      }
+      specialchar=specialchar {
+       dialogs=dialogs {
+        specialchar.js
+       }
+      }
+      styles=styles {
+       styles=styles {
+        default.js
+       }
+      }
+      table=table {
+       dialogs=dialogs {
+        table.js
+       }
+      }
+      tableresize=tableresize {
+       plugin.js
+      }
+      tabletools=tabletools {
+       dialogs=dialogs {
+        tableCell.js
+       }
+      }
+      templates=templates {
+       dialogs=dialogs {
+        templates.js
+       }
+       templates=templates {
+        default.js
+        images=images {
+        }
+       }
+      }
+      uicolor=uicolor {
+       plugin.js
+       dialogs=dialogs {
+        uicolor.js
+       }
+       lang=lang {
+        en.js
+       }
+       yui=yui {
+        yui.js
+        assets=assets {
+         yui.css
+        }
+       }
+      }
+      wsc=wsc {
+       dialogs=dialogs {
+        ciframe.html
+        tmpFrameset.html
+        wsc.css
+        wsc.js
+       }
+      }
+     }
+     skins=skins {
+      kama=kama {
+       dialog.css
+       editor.css
+       templates.css
+       skin.js
+       images=images {
+       }
+      }
+      office2003=office2003 {
+       dialog.css
+       editor.css
+       templates.css
+       skin.js
+       images=images {
+       }
+      }
+      v2=v2 {
+       dialog.css
+       editor.css
+       templates.css
+       skin.js
+       images=images {
+       }
+      }
+     }
+     themes=themes {
+      default=default {
+       theme.js
+      }
+     }
+    }
+    jquery-ui-1.9m4=jquery-ui-1.9m4 {
+     AUTHORS.txt
+     GPL-LICENSE.txt
+     MIT-LICENSE.txt
+     version.txt
+     jquery-1.4.4.js
+     demos=demos {
+      index.html
+      demos.css
+      accordion=accordion {
+       collapsible.html
+       custom-icons.html
+       default.html
+       fillspace.html
+       hoverintent.html
+       index.html
+       mouseover.html
+       no-auto-height.html
+       sortable.html
+      }
+      addClass=addClass {
+       default.html
+       index.html
+      }
+      animate=animate {
+       default.html
+       index.html
+      }
+      autocomplete=autocomplete {
+       categories.html
+       combobox.html
+       custom-data.html
+       default.html
+       folding.html
+       index.html
+       maxheight.html
+       multiple-remote.html
+       multiple.html
+       remote-jsonp.html
+       remote-with-cache.html
+       remote.html
+       xml.html
+       images=images {
+       }
+      }
+      button=button {
+       checkbox.html
+       default.html
+       icons.html
+       index.html
+       radio.html
+       splitbutton.html
+       toolbar.html
+      }
+      datepicker=datepicker {
+       alt-field.html
+       animation.html
+       buttonbar.html
+       date-formats.html
+       date-range.html
+       default.html
+       dropdown-month-year.html
+       icon-trigger.html
+       index.html
+       inline.html
+       localization.html
+       min-max.html
+       multiple-calendars.html
+       other-months.html
+       show-week.html
+       images=images {
+       }
+      }
+      dialog=dialog {
+       animated.html
+       default.html
+       index.html
+       modal-confirmation.html
+       modal-form.html
+       modal-message.html
+       modal.html
+      }
+      draggable=draggable {
+       constrain-movement.html
+       cursor-style.html
+       default.html
+       delay-start.html
+       events.html
+       handle.html
+       index.html
+       revert.html
+       scroll.html
+       snap-to.html
+       sortable.html
+       visual-feedback.html
+      }
+      droppable=droppable {
+       accepted-elements.html
+       default.html
+       index.html
+       photo-manager.html
+       propagation.html
+       revert.html
+       shopping-cart.html
+       visual-feedback.html
+       images=images {
+       }
+      }
+      effect=effect {
+       default.html
+       easing.html
+       index.html
+      }
+      hide=hide {
+       default.html
+       index.html
+      }
+      images=images {
+      }
+      menu=menu {
+       contextmenu.html
+       default.html
+       index.html
+      }
+      position=position {
+       cycler.html
+       default.html
+       index.html
+       images=images {
+       }
+      }
+      progressbar=progressbar {
+       animated.html
+       default.html
+       index.html
+       resize.html
+       images=images {
+       }
+      }
+      removeClass=removeClass {
+       default.html
+       index.html
+      }
+      resizable=resizable {
+       animate.html
+       aspect-ratio.html
+       constrain-area.html
+       default.html
+       delay-start.html
+       helper.html
+       index.html
+       max-min.html
+       snap-to-grid.html
+       synchronous-resize.html
+       textarea.html
+       visual-feedback.html
+      }
+      selectable=selectable {
+       default.html
+       display-grid.html
+       index.html
+       serialize.html
+      }
+      show=show {
+       default.html
+       index.html
+      }
+      slider=slider {
+       colorpicker.html
+       default.html
+       hotelrooms.html
+       index.html
+       multiple-vertical.html
+       range-vertical.html
+       range.html
+       rangemax.html
+       rangemin.html
+       side-scroll.html
+       slider-vertical.html
+       steps.html
+       tabs.html
+      }
+      sortable=sortable {
+       connect-lists-through-tabs.html
+       connect-lists.html
+       default.html
+       delay-start.html
+       display-grid.html
+       empty-lists.html
+       index.html
+       items.html
+       placeholder.html
+       portlets.html
+      }
+      spinner=spinner {
+       currency.html
+       decimal.html
+       default.html
+       index.html
+       latlong.html
+       overflow.html
+       time.html
+      }
+      switchClass=switchClass {
+       default.html
+       index.html
+      }
+      tabs=tabs {
+       ajax.html
+       bottom.html
+       collapsible.html
+       cookie.html
+       default.html
+       index.html
+       manipulation.html
+       mouseover.html
+       sortable.html
+       vertical.html
+       ajax=ajax {
+        content1.html
+        content2.html
+       }
+      }
+      toggle=toggle {
+       default.html
+       index.html
+      }
+      toggleClass=toggleClass {
+       default.html
+       index.html
+      }
+      tooltip=tooltip {
+       custom-animation.html
+       default.html
+       delegation-mixbag.html
+       forms.html
+       index.html
+       tracking.html
+       ajax=ajax {
+        content1.html
+        content2.html
+       }
+      }
+     }
+     external=external {
+      qunit.css
+      jquery.bgiframe-2.1.2.js
+      jquery.cookie.js
+      jquery.global.de-DE.js
+      jquery.global.ja-JP.js
+      jquery.global.js
+      jquery.metadata.js
+      jquery.mousewheel-3.0.4.js
+      qunit.js
+     }
+     tests=tests {
+      index.html
+      jquery.simulate.js
+      static=static {
+       highlight_error.html
+       icons.html
+       index.html
+       overlay.html
+       static.css
+       static.js
+       accordion=accordion {
+        default.html
+        dl.html
+        ul.html
+       }
+       button=button {
+        default.html
+       }
+       datepicker=datepicker {
+        datepicker.html
+        default.html
+       }
+       dialog=dialog {
+        default.html
+        dialog.html
+       }
+       draggable=draggable {
+        default.html
+       }
+       droppable=droppable {
+        default.html
+       }
+       menu=menu {
+        all-menus-icons.html
+        default.html
+       }
+       progressbar=progressbar {
+        default.html
+        progressbar.html
+       }
+       resizable=resizable {
+        default.html
+       }
+       selectable=selectable {
+        default.html
+       }
+       slider=slider {
+        default.html
+        default_vertical.html
+        slider_horizontal.html
+        slider_horizontal_range.html
+        slider_horizontal_range_max.html
+        slider_horizontal_range_min.html
+        slider_vertical.html
+        slider_vertical_range.html
+        slider_vertical_range_max.html
+        slider_vertical_range_min.html
+       }
+       sortable=sortable {
+        default.html
+       }
+       tabs=tabs {
+        default.html
+        tabs.html
+       }
+      }
+      unit=unit {
+       defaults.html
+       index.html
+       swarminject.js
+       testsuite.js
+       accordion=accordion {
+        accordio.html
+        accordion.html
+        accordion_core.js
+        accordion_defaults.js
+        accordion_defaults_deprecated.js
+        accordion_deprecated.js
+        accordion_events.js
+        accordion_methods.js
+        accordion_options.js
+        accordion_tickets.js
+       }
+       autocomplete=autocomplete {
+        remote_object_array_labels.txt
+        remote_object_array_values.txt
+        remote_string_array.txt
+        autocomplete.html
+        autocomplete_core.js
+        autocomplete_defaults.js
+        autocomplete_events.js
+        autocomplete_methods.js
+        autocomplete_options.js
+        autocomplete_tickets.js
+       }
+       button=button {
+        button.html
+        button_core.js
+        button_defaults.js
+        button_events.js
+        button_methods.js
+        button_options.js
+        button_tickets.js
+       }
+       core=core {
+        core.html
+        core.js
+        selector.js
+       }
+       datepicker=datepicker {
+        datepicker.html
+        datepicker_core.js
+        datepicker_defaults.js
+        datepicker_events.js
+        datepicker_methods.js
+        datepicker_options.js
+        datepicker_tickets.js
+       }
+       dialog=dialog {
+        dialog.html
+        dialog_core.js
+        dialog_defaults.js
+        dialog_events.js
+        dialog_methods.js
+        dialog_options.js
+        dialog_tickets.js
+       }
+       draggable=draggable {
+        draggable.html
+        draggable_core.js
+        draggable_defaults.js
+        draggable_events.js
+        draggable_methods.js
+        draggable_options.js
+        draggable_tickets.js
+       }
+       droppable=droppable {
+        droppable.html
+        droppable_core.js
+        droppable_defaults.js
+        droppable_events.js
+        droppable_methods.js
+        droppable_options.js
+        droppable_tickets.js
+       }
+       images=images {
+       }
+       menu=menu {
+        menu.html
+        menu_core.js
+        menu_defaults.js
+        menu_events.js
+        menu_methods.js
+        menu_options.js
+        menu_tickets.js
+       }
+       position=position {
+        position.html
+        position_core.js
+       }
+       progressbar=progressbar {
+        progressbar.html
+        progressbar_core.js
+        progressbar_defaults.js
+        progressbar_events.js
+        progressbar_methods.js
+        progressbar_options.js
+        progressbar_tickets.js
+       }
+       resizable=resizable {
+        resizable.html
+        resizable_core.js
+        resizable_defaults.js
+        resizable_events.js
+        resizable_methods.js
+        resizable_options.js
+        resizable_tickets.js
+        images=images {
+        }
+       }
+       selectable=selectable {
+        selectable.html
+        selectable_core.js
+        selectable_defaults.js
+        selectable_events.js
+        selectable_methods.js
+        selectable_options.js
+        selectable_tickets.js
+       }
+       slider=slider {
+        slider.html
+        slider_core.js
+        slider_defaults.js
+        slider_events.js
+        slider_methods.js
+        slider_options.js
+        slider_tickets.js
+       }
+       sortable=sortable {
+        sortable.html
+        sortable_core.js
+        sortable_defaults.js
+        sortable_events.js
+        sortable_methods.js
+        sortable_options.js
+        sortable_tickets.js
+       }
+       spinner=spinner {
+        spinner.html
+        spinner_core.js
+        spinner_defaults.js
+        spinner_events.js
+        spinner_methods.js
+        spinner_options.js
+       }
+       tabs=tabs {
+        tabs.html
+        tabs_core.js
+        tabs_defaults.js
+        tabs_events.js
+        tabs_methods.js
+        tabs_options.js
+        tabs_tickets.js
+        data=data {
+         test.html
+        }
+       }
+       tooltip=tooltip {
+        tooltip.html
+        tooltip_core.js
+        tooltip_defaults.js
+        tooltip_events.js
+        tooltip_methods.js
+        tooltip_options.js
+        tooltip_tickets.js
+       }
+       widget=widget {
+        widget.html
+        widget_core.js
+        widget_tickets.js
+       }
+      }
+      visual=visual {
+       all.html
+       effects.all.html
+       index.html
+       theme.html
+       all.css
+       effects.all.css
+       visual.css
+       effects.all.js
+       accordion=accordion {
+        accordion.html
+        accordion_dl.html
+        accordion_method_destroy.html
+        accordion_method_disable.html
+        accordion_option_animated_bounceslide.html
+        accordion_option_animated_easeslide.html
+        accordion_option_animated_false.html
+        accordion_option_animated_slide.html
+        accordion_option_animated_true.html
+        accordion_option_autoHeight_false.html
+        accordion_option_autoHeight_true.html
+        accordion_option_fillSpace_true.html
+        accordion_option_navigation_true.html
+        accordion_ticket_4322.html
+        accordion_ticket_4331.html
+        accordion_ticket_4444.html
+        accordion_ul.html
+       }
+       addClass=addClass {
+        addClass_queue.html
+       }
+       animate=animate {
+        animate_backgroundColor_hex.html
+        animate_backgroundColor_rgb.html
+        animate_color_hex.html
+        animate_color_rgb.html
+       }
+       autocomplete=autocomplete {
+        autocomplete.html
+       }
+       button=button {
+        button.html
+        button_disabled_true.html
+        button_input_type_checkbox.html
+        button_option_disabled_true.html
+        button_performance.html
+        button_ticket_5254.html
+        button_ticket_5261.html
+        button_ticket_5278.html
+       }
+       compound=compound {
+        accordion_dialog.html
+        accordion_tabs.html
+        datepicker_dialog.html
+        draggable_accordion.html
+        draggable_accordion_accordion_tabs_draggable.html
+        sortable_accordion_sortable_tabs.html
+        tabs_tabs.html
+        tabs_tooltips.html
+        widgets_in_dialog.html
+       }
+       datepicker=datepicker {
+        datepicker.html
+        datepicker_multi_inline.html
+        datepicker_ticket_4071.html
+        datepicker_ticket_4240.html
+        datepicker_ticket_4443.html
+        datepicker_ticket_5676.html
+        multimonth.html
+        viewport.html
+       }
+       dialog=dialog {
+        dialog.html
+        dialog_on_page_with_large_dom.html
+        dialog_on_page_with_scrollbars.html
+        dialog_option_buttons_OK_Cancel.html
+        dialog_option_closeOnEscape_false.html
+        dialog_option_closeOnEscape_true.html
+        dialog_option_modal_false.html
+        dialog_option_modal_true.html
+        dialog_option_position_right_top.html
+        dialog_ticket_4350.html
+        dialog_ticket_4826.html
+       }
+       draggable=draggable {
+        draggable.html
+        draggable.scroll.html
+        draggable_option_containment_array.html
+        draggable_option_cursorAt_object.html
+        draggable_option_handle_selector.html
+        draggable_option_iframeFix_false.html
+        draggable_option_iframeFix_selector.html
+        draggable_option_iframeFix_true.html
+       }
+       droppable=droppable {
+        droppable.html
+        droppable_option_accept_default.html
+        droppable_option_accept_function.html
+        droppable_option_accept_selector.html
+        droppable_ticket_4087.html
+        droppable_ticket_4088.html
+        droppable.css
+       }
+       menu=menu {
+        contextmenu.html
+        drilldown.html
+        menu.html
+        menubar.html
+        nested.html
+       }
+       position=position {
+        position.html
+        position_margin.html
+       }
+       progressbar=progressbar {
+        progressbar.html
+       }
+       resizable=resizable {
+        resizable.html
+        resizable_option_alsoResize_child.html
+        resizable_option_aspectRatio_0.5.html
+        resizable_option_aspectRatio_1.0.html
+        resizable_option_aspectRatio_1.5.html
+        resizable_option_aspectRatio_preserve_maxHeight_150.html
+        resizable_option_aspectRatio_preserve_maxWidth_150.html
+        resizable_option_aspectRatio_preserve_minHeight_50.html
+        resizable_option_aspectRatio_preserve_minWidth_50.html
+        resizable_option_aspectRatio_preserve_w100xh100.html
+        resizable_option_aspectRatio_preserve_w100xh50.html
+        resizable_option_aspectRatio_preserve_w50xh100.html
+        resizable_ticket_3053.html
+        resizable_ticket_4199.html
+        resizable_ticket_4217.html
+        resizable_ticket_4940.html
+        resizable_ticket_5335.html
+        images=images {
+        }
+       }
+       selectable=selectable {
+        selectable.html
+        selectable_ticket_4341.html
+       }
+       slider=slider {
+        slider.html
+        slider_horizontal.html
+        slider_horizontal_range.html
+        slider_horizontal_range_max.html
+        slider_horizontal_range_min.html
+        slider_in_container_with_scrollbars.html
+        slider_method_destroy.html
+        slider_method_disable.html
+        slider_option_animate_false.html
+        slider_option_animate_true.html
+        slider_option_max_3.html
+        slider_option_max_30.html
+        slider_option_max_300.html
+        slider_option_min_-3.html
+        slider_option_min_-30.html
+        slider_option_min_-300.html
+        slider_option_orientation_horizontal.html
+        slider_option_orientation_vertical.html
+        slider_option_range_false.html
+        slider_option_range_max.html
+        slider_option_range_min.html
+        slider_option_range_true.html
+        slider_option_step_25.html
+        slider_option_step_5.html
+        slider_option_value_3.html
+        slider_option_value_30.html
+        slider_option_values_25_50_75.html
+        slider_option_values_25_75.html
+        slider_option_values_50.html
+        slider_ticket_3736.html
+        slider_ticket_3762.html
+        slider_ticket_4385.html
+        slider_ticket_4467.html
+        slider_vertical.html
+        slider_vertical_range.html
+        slider_vertical_range_max.html
+        slider_vertical_range_min.html
+       }
+       sortable=sortable {
+        sortable.html
+        sortable_massive_scale.html
+        sortable_option_revert_false.html
+        sortable_option_revert_true.html
+        sortable_ticket_4231.html
+        sortable_ticket_4551.html
+        sortable_ticket_5355.html
+       }
+       spinner=spinner {
+        spinner.html
+       }
+       tabs=tabs {
+        tabs.html
+       }
+       tooltip=tooltip {
+        callout.html
+        tooltip.html
+       }
+      }
+     }
+     themes=themes {
+      base=base {
+       jquery-ui.css
+       jquery.ui.accordion.css
+       jquery.ui.all.css
+       jquery.ui.autocomplete.css
+       jquery.ui.base.css
+       jquery.ui.button.css
+       jquery.ui.core.css
+       jquery.ui.datepicker.css
+       jquery.ui.dialog.css
+       jquery.ui.menu.css
+       jquery.ui.progressbar.css
+       jquery.ui.resizable.css
+       jquery.ui.selectable.css
+       jquery.ui.slider.css
+       jquery.ui.spinner.css
+       jquery.ui.tabs.css
+       jquery.ui.theme.css
+       jquery.ui.tooltip.css
+       images=images {
+       }
+       minified=minified {
+        jquery-ui.min.css
+        jquery.ui.accordion.min.css
+        jquery.ui.all.min.css
+        jquery.ui.autocomplete.min.css
+        jquery.ui.base.min.css
+        jquery.ui.button.min.css
+        jquery.ui.core.min.css
+        jquery.ui.datepicker.min.css
+        jquery.ui.dialog.min.css
+        jquery.ui.menu.min.css
+        jquery.ui.progressbar.min.css
+        jquery.ui.resizable.min.css
+        jquery.ui.selectable.min.css
+        jquery.ui.slider.min.css
+        jquery.ui.spinner.min.css
+        jquery.ui.tabs.min.css
+        jquery.ui.theme.min.css
+        jquery.ui.tooltip.min.css
+        images=images {
+        }
+       }
+      }
+     }
+     ui=ui {
+      jquery-ui.js
+      jquery.effects.blind.js
+      jquery.effects.bounce.js
+      jquery.effects.clip.js
+      jquery.effects.core.js
+      jquery.effects.drop.js
+      jquery.effects.explode.js
+      jquery.effects.fade.js
+      jquery.effects.fold.js
+      jquery.effects.highlight.js
+      jquery.effects.pulsate.js
+      jquery.effects.scale.js
+      jquery.effects.shake.js
+      jquery.effects.slide.js
+      jquery.effects.transfer.js
+      jquery.ui.accordion.js
+      jquery.ui.autocomplete.js
+      jquery.ui.button.js
+      jquery.ui.core.js
+      jquery.ui.datepicker.js
+      jquery.ui.dialog.js
+      jquery.ui.draggable.js
+      jquery.ui.droppable.js
+      jquery.ui.menu.js
+      jquery.ui.mouse.js
+      jquery.ui.position.js
+      jquery.ui.progressbar.js
+      jquery.ui.resizable.js
+      jquery.ui.selectable.js
+      jquery.ui.slider.js
+      jquery.ui.sortable.js
+      jquery.ui.spinner.js
+      jquery.ui.tabs.js
+      jquery.ui.tooltip.js
+      jquery.ui.widget.js
+      i18n=i18n {
+       jquery-ui-i18n.js
+       jquery.ui.datepicker-af.js
+       jquery.ui.datepicker-ar-DZ.js
+       jquery.ui.datepicker-ar.js
+       jquery.ui.datepicker-az.js
+       jquery.ui.datepicker-bg.js
+       jquery.ui.datepicker-bs.js
+       jquery.ui.datepicker-ca.js
+       jquery.ui.datepicker-cs.js
+       jquery.ui.datepicker-da.js
+       jquery.ui.datepicker-de.js
+       jquery.ui.datepicker-el.js
+       jquery.ui.datepicker-en-AU.js
+       jquery.ui.datepicker-en-GB.js
+       jquery.ui.datepicker-en-NZ.js
+       jquery.ui.datepicker-eo.js
+       jquery.ui.datepicker-es.js
+       jquery.ui.datepicker-et.js
+       jquery.ui.datepicker-eu.js
+       jquery.ui.datepicker-fa.js
+       jquery.ui.datepicker-fi.js
+       jquery.ui.datepicker-fo.js
+       jquery.ui.datepicker-fr-CH.js
+       jquery.ui.datepicker-fr.js
+       jquery.ui.datepicker-gl.js
+       jquery.ui.datepicker-he.js
+       jquery.ui.datepicker-hr.js
+       jquery.ui.datepicker-hu.js
+       jquery.ui.datepicker-hy.js
+       jquery.ui.datepicker-id.js
+       jquery.ui.datepicker-is.js
+       jquery.ui.datepicker-it.js
+       jquery.ui.datepicker-ja.js
+       jquery.ui.datepicker-ko.js
+       jquery.ui.datepicker-kz.js
+       jquery.ui.datepicker-lt.js
+       jquery.ui.datepicker-lv.js
+       jquery.ui.datepicker-ml.js
+       jquery.ui.datepicker-ms.js
+       jquery.ui.datepicker-nl.js
+       jquery.ui.datepicker-no.js
+       jquery.ui.datepicker-pl.js
+       jquery.ui.datepicker-pt-BR.js
+       jquery.ui.datepicker-pt.js
+       jquery.ui.datepicker-rm.js
+       jquery.ui.datepicker-ro.js
+       jquery.ui.datepicker-ru.js
+       jquery.ui.datepicker-sk.js
+       jquery.ui.datepicker-sl.js
+       jquery.ui.datepicker-sq.js
+       jquery.ui.datepicker-sr-SR.js
+       jquery.ui.datepicker-sr.js
+       jquery.ui.datepicker-sv.js
+       jquery.ui.datepicker-ta.js
+       jquery.ui.datepicker-th.js
+       jquery.ui.datepicker-tr.js
+       jquery.ui.datepicker-uk.js
+       jquery.ui.datepicker-vi.js
+       jquery.ui.datepicker-zh-CN.js
+       jquery.ui.datepicker-zh-HK.js
+       jquery.ui.datepicker-zh-TW.js
+      }
+      minified=minified {
+       jquery-ui.min.js
+       jquery.effects.blind.min.js
+       jquery.effects.bounce.min.js
+       jquery.effects.clip.min.js
+       jquery.effects.core.min.js
+       jquery.effects.drop.min.js
+       jquery.effects.explode.min.js
+       jquery.effects.fade.min.js
+       jquery.effects.fold.min.js
+       jquery.effects.highlight.min.js
+       jquery.effects.pulsate.min.js
+       jquery.effects.scale.min.js
+       jquery.effects.shake.min.js
+       jquery.effects.slide.min.js
+       jquery.effects.transfer.min.js
+       jquery.ui.accordion.min.js
+       jquery.ui.autocomplete.min.js
+       jquery.ui.button.min.js
+       jquery.ui.core.min.js
+       jquery.ui.datepicker.min.js
+       jquery.ui.dialog.min.js
+       jquery.ui.draggable.min.js
+       jquery.ui.droppable.min.js
+       jquery.ui.menu.min.js
+       jquery.ui.mouse.min.js
+       jquery.ui.position.min.js
+       jquery.ui.progressbar.min.js
+       jquery.ui.resizable.min.js
+       jquery.ui.selectable.min.js
+       jquery.ui.slider.min.js
+       jquery.ui.sortable.min.js
+       jquery.ui.spinner.min.js
+       jquery.ui.tabs.min.js
+       jquery.ui.tooltip.min.js
+       jquery.ui.widget.min.js
+       i18n=i18n {
+        jquery-ui-i18n.min.js
+        jquery.ui.datepicker-af.min.js
+        jquery.ui.datepicker-ar-DZ.min.js
+        jquery.ui.datepicker-ar.min.js
+        jquery.ui.datepicker-az.min.js
+        jquery.ui.datepicker-bg.min.js
+        jquery.ui.datepicker-bs.min.js
+        jquery.ui.datepicker-ca.min.js
+        jquery.ui.datepicker-cs.min.js
+        jquery.ui.datepicker-da.min.js
+        jquery.ui.datepicker-de.min.js
+        jquery.ui.datepicker-el.min.js
+        jquery.ui.datepicker-en-AU.min.js
+        jquery.ui.datepicker-en-GB.min.js
+        jquery.ui.datepicker-en-NZ.min.js
+        jquery.ui.datepicker-eo.min.js
+        jquery.ui.datepicker-es.min.js
+        jquery.ui.datepicker-et.min.js
+        jquery.ui.datepicker-eu.min.js
+        jquery.ui.datepicker-fa.min.js
+        jquery.ui.datepicker-fi.min.js
+        jquery.ui.datepicker-fo.min.js
+        jquery.ui.datepicker-fr-CH.min.js
+        jquery.ui.datepicker-fr.min.js
+        jquery.ui.datepicker-gl.min.js
+        jquery.ui.datepicker-he.min.js
+        jquery.ui.datepicker-hr.min.js
+        jquery.ui.datepicker-hu.min.js
+        jquery.ui.datepicker-hy.min.js
+        jquery.ui.datepicker-id.min.js
+        jquery.ui.datepicker-is.min.js
+        jquery.ui.datepicker-it.min.js
+        jquery.ui.datepicker-ja.min.js
+        jquery.ui.datepicker-ko.min.js
+        jquery.ui.datepicker-kz.min.js
+        jquery.ui.datepicker-lt.min.js
+        jquery.ui.datepicker-lv.min.js
+        jquery.ui.datepicker-ml.min.js
+        jquery.ui.datepicker-ms.min.js
+        jquery.ui.datepicker-nl.min.js
+        jquery.ui.datepicker-no.min.js
+        jquery.ui.datepicker-pl.min.js
+        jquery.ui.datepicker-pt-BR.min.js
+        jquery.ui.datepicker-pt.min.js
+        jquery.ui.datepicker-rm.min.js
+        jquery.ui.datepicker-ro.min.js
+        jquery.ui.datepicker-ru.min.js
+        jquery.ui.datepicker-sk.min.js
+        jquery.ui.datepicker-sl.min.js
+        jquery.ui.datepicker-sq.min.js
+        jquery.ui.datepicker-sr-SR.min.js
+        jquery.ui.datepicker-sr.min.js
+        jquery.ui.datepicker-sv.min.js
+        jquery.ui.datepicker-ta.min.js
+        jquery.ui.datepicker-th.min.js
+        jquery.ui.datepicker-tr.min.js
+        jquery.ui.datepicker-uk.min.js
+        jquery.ui.datepicker-vi.min.js
+        jquery.ui.datepicker-zh-CN.min.js
+        jquery.ui.datepicker-zh-HK.min.js
+        jquery.ui.datepicker-zh-TW.min.js
+       }
+      }
+     }
+    }
+    jquery.jqGrid-3.8=jquery.jqGrid-3.8 {
+     css=css {
+      ui.jqgrid.css
+     }
+     js=js {
+      Changes.txt
+      install.txt
+      jquery-1.4.2.min.js
+      jquery.jqGrid.min.js
+      i18n=i18n {
+       grid.locale-bg.js
+       grid.locale-bg1251.js
+       grid.locale-cat.js
+       grid.locale-cn.js
+       grid.locale-cs.js
+       grid.locale-da.js
+       grid.locale-de.js
+       grid.locale-el.js
+       grid.locale-en.js
+       grid.locale-es.js
+       grid.locale-fa.js
+       grid.locale-fi.js
+       grid.locale-fr.js
+       grid.locale-gl.js
+       grid.locale-he.js
+       grid.locale-hu.js
+       grid.locale-is.js
+       grid.locale-it.js
+       grid.locale-ja.js
+       grid.locale-nl.js
+       grid.locale-no.js
+       grid.locale-pl.js
+       grid.locale-pt-br.js
+       grid.locale-pt.js
+       grid.locale-ro.js
+       grid.locale-ru.js
+       grid.locale-sk.js
+       grid.locale-sv.js
+       grid.locale-tr.js
+       grid.locale-ua.js
+      }
+     }
+     src=src {
+      JsonXml.js
+      grid.base.js
+      grid.celledit.js
+      grid.common.js
+      grid.custom.js
+      grid.formedit.js
+      grid.grouping.js
+      grid.import.js
+      grid.inlinedit.js
+      grid.jqueryui.js
+      grid.loader.js
+      grid.postext.js
+      grid.setcolumns.js
+      grid.subgrid.js
+      grid.tbltogrid.js
+      grid.treegrid.js
+      jqDnR.js
+      jqModal.js
+      jquery.fmatter.js
+      jquery.searchFilter.js
+      ui.multiselect.js
+      css=css {
+       jquery.searchFilter.css
+       ui.jqgrid.css
+       ui.multiselect.css
+      }
+      i18n=i18n {
+       grid.locale-bg.js
+       grid.locale-bg1251.js
+       grid.locale-cat.js
+       grid.locale-cn.js
+       grid.locale-cs.js
+       grid.locale-da.js
+       grid.locale-de.js
+       grid.locale-dk.js
+       grid.locale-el.js
+       grid.locale-en.js
+       grid.locale-es.js
+       grid.locale-fa.js
+       grid.locale-fi.js
+       grid.locale-fr.js
+       grid.locale-gl.js
+       grid.locale-he.js
+       grid.locale-hu.js
+       grid.locale-is.js
+       grid.locale-it.js
+       grid.locale-ja.js
+       grid.locale-nl.js
+       grid.locale-no.js
+       grid.locale-pl.js
+       grid.locale-pt-br.js
+       grid.locale-pt.js
+       grid.locale-ro.js
+       grid.locale-ru.js
+       grid.locale-sk.js
+       grid.locale-sv.js
+       grid.locale-tr.js
+       grid.locale-ua.js
+      }
+     }
+    }
+    jsTree.v.1.0rc2=jsTree.v.1.0rc2 {
+     jquery.jstree.js
+     _demo=_demo {
+      _install.txt
+      index.html
+      _inc=_inc {
+      }
+     }
+     _docs=_docs {
+      _html_data.html
+      checkbox.html
+      contextmenu.html
+      cookies.html
+      core.html
+      crrm.html
+      dnd.html
+      hotkeys.html
+      html_data.html
+      index.html
+      json_data.html
+      languages.html
+      search.html
+      sort.html
+      themeroller.html
+      themes.html
+      types.html
+      ui.html
+      unique.html
+      xml_data.html
+      
+      style.css
+      syntax=syntax {
+       
+       style.css
+       
+       script.js
+      }
+     }
+     _lib=_lib {
+      jquery.cookie.js
+      jquery.hotkeys.js
+      jquery.js
+     }
+     themes=themes {
+      apple=apple {
+       style.css
+      }
+      classic=classic {
+       style.css
+      }
+      default=default {
+       style.css
+      }
+      default-rtl=default-rtl {
+       style.css
+      }
+     }
+    }
+    markitup-1.1.10=markitup-1.1.10 {
+     jquery.markitup.js
+     sets=sets {
+      default=default {
+       style.css
+       set.js
+       images=images {
+       }
+      }
+      textile_fiber=textile_fiber {
+       readme.txt
+       style.css
+       set.js
+       images=images {
+       }
+      }
+     }
+     skins=skins {
+      markitup=markitup {
+       style.css
+       images=images {
+       }
+      }
+      simple=simple {
+       style.css
+       images=images {
+       }
+      }
+     }
+     templates=templates {
+      preview.html
+      preview.css
+     }
+    }
+    plupload=plupload {
+     plupload.flash.js
+     plupload.html5.js
+     plupload.js
+    }
+   }
+  }
+ }
+ templates=templates {
+  fiber=fiber {
+   admin.html
+   ckeditor_js.html
+   content_item.html
+   content_items.html
+   header.html
+   markitup_css.html
+   markitup_js.html
+   menu.html
+  }
+ }
+ templatetags=templatetags {
+  __init__.py
+  fiber_tags.py
+ }
+ utils=utils {
+  __init__.py
+  date.py
+  fields.py
+  form_fields.py
+  import_util.py
+  json.py
+  urls.py
+  validators.py
+  widgets.py
+ }
+}
+
+django=$VIRTUAL_ENV/lib/python2.7/site-packages/django filter="Makefile *.rst *.vim *.txt *.json *.diff *.tmpl *.py *.html *.css *.js" {
+ __init__.py
+ bin=bin {
+  __init__.py
+  daily_cleanup.py
+  django-admin.py
+  unique-messages.py
+  profiling=profiling {
+   __init__.py
+   gather_profile_stats.py
+  }
+ }
+ conf=conf {
+  __init__.py
+  global_settings.py
+  app_template=app_template {
+   __init__.py
+   models.py
+   tests.py
+   views.py
+  }
+  locale=locale {
+   __init__.py
+   ar=ar {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   az=az {
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   bg=bg {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   bn=bn {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   bs=bs {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   ca=ca {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   cs=cs {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   cy=cy {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   da=da {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   de=de {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   el=el {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   en=en {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   en_GB=en_GB {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   es=es {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   es_AR=es_AR {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   es_MX=es_MX {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   es_NI=es_NI {
+    __init__.py
+    formats.py
+   }
+   et=et {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   eu=eu {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   fa=fa {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   fi=fi {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   fr=fr {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   fy_NL=fy_NL {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   ga=ga {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   gl=gl {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   he=he {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   hi=hi {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   hr=hr {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   hu=hu {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   id=id {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   is=is {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   it=it {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   ja=ja {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   ka=ka {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   km=km {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   kn=kn {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   ko=ko {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   lt=lt {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   lv=lv {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   mk=mk {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   ml=ml {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   mn=mn {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   nb=nb {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   nl=nl {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   nn=nn {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   no=no {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   pa=pa {
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   pl=pl {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   pt=pt {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   pt_BR=pt_BR {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   ro=ro {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   ru=ru {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   sk=sk {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   sl=sl {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   sq=sq {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   sr=sr {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   sr_Latn=sr_Latn {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   sv=sv {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   ta=ta {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   te=te {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   th=th {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   tr=tr {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   uk=uk {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   ur=ur {
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   vi=vi {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   zh_CN=zh_CN {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+   zh_TW=zh_TW {
+    __init__.py
+    formats.py
+    LC_MESSAGES=LC_MESSAGES {
+    }
+   }
+  }
+  project_template=project_template {
+   __init__.py
+   manage.py
+   settings.py
+   urls.py
+  }
+  urls=urls {
+   __init__.py
+   defaults.py
+   i18n.py
+   shortcut.py
+   static.py
+  }
+ }
+ contrib=contrib {
+  __init__.py
+  admin=admin {
+   __init__.py
+   actions.py
+   filterspecs.py
+   forms.py
+   helpers.py
+   models.py
+   options.py
+   sites.py
+   util.py
+   validation.py
+   widgets.py
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+   media=media {
+    css=css {
+     base.css
+     changelists.css
+     dashboard.css
+     forms.css
+     ie.css
+     login.css
+     rtl.css
+     widgets.css
+    }
+    img=img {
+     admin=admin {
+     }
+     gis=gis {
+     }
+    }
+    js=js {
+     LICENSE-JQUERY.txt
+     compress.py
+     SelectBox.js
+     SelectFilter2.js
+     actions.js
+     actions.min.js
+     calendar.js
+     collapse.js
+     collapse.min.js
+     core.js
+     dateparse.js
+     getElementsBySelector.js
+     inlines.js
+     inlines.min.js
+     jquery.init.js
+     jquery.js
+     jquery.min.js
+     prepopulate.js
+     prepopulate.min.js
+     timeparse.js
+     urlify.js
+     admin=admin {
+      DateTimeShortcuts.js
+      RelatedObjectLookups.js
+      ordering.js
+     }
+    }
+   }
+   templates=templates {
+    admin=admin {
+     404.html
+     500.html
+     actions.html
+     app_index.html
+     base.html
+     base_site.html
+     change_form.html
+     change_list.html
+     change_list_results.html
+     date_hierarchy.html
+     delete_confirmation.html
+     delete_selected_confirmation.html
+     filter.html
+     index.html
+     invalid_setup.html
+     login.html
+     object_history.html
+     pagination.html
+     prepopulated_fields_js.html
+     search_form.html
+     submit_line.html
+     auth=auth {
+      user=user {
+       add_form.html
+       change_password.html
+      }
+     }
+     edit_inline=edit_inline {
+      stacked.html
+      tabular.html
+     }
+     includes=includes {
+      fieldset.html
+     }
+    }
+    registration=registration {
+     logged_out.html
+     password_change_done.html
+     password_change_form.html
+     password_reset_complete.html
+     password_reset_confirm.html
+     password_reset_done.html
+     password_reset_email.html
+     password_reset_form.html
+    }
+   }
+   templatetags=templatetags {
+    __init__.py
+    admin_list.py
+    admin_modify.py
+    adminmedia.py
+    log.py
+   }
+   views=views {
+    __init__.py
+    decorators.py
+    main.py
+   }
+  }
+  admindocs=admindocs {
+   __init__.py
+   models.py
+   urls.py
+   utils.py
+   views.py
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+   templates=templates {
+    admin_doc=admin_doc {
+     bookmarklets.html
+     index.html
+     missing_docutils.html
+     model_detail.html
+     model_index.html
+     template_detail.html
+     template_filter_index.html
+     template_tag_index.html
+     view_detail.html
+     view_index.html
+    }
+   }
+   tests=tests {
+    __init__.py
+    fields.py
+   }
+  }
+  auth=auth {
+   __init__.py
+   admin.py
+   backends.py
+   context_processors.py
+   create_superuser.py
+   decorators.py
+   forms.py
+   middleware.py
+   models.py
+   signals.py
+   tokens.py
+   urls.py
+   views.py
+   fixtures=fixtures {
+   }
+   handlers=handlers {
+    __init__.py
+    modpython.py
+   }
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+   management=management {
+    __init__.py
+    commands=commands {
+     __init__.py
+     changepassword.py
+     createsuperuser.py
+    }
+   }
+   tests=tests {
+    __init__.py
+    auth_backends.py
+    basic.py
+    decorators.py
+    forms.py
+    models.py
+    permissions.py
+    remote_user.py
+    signals.py
+    tokens.py
+    urls.py
+    views.py
+    templates=templates {
+     registration=registration {
+      logged_out.html
+      login.html
+      password_change_form.html
+      password_reset_complete.html
+      password_reset_confirm.html
+      password_reset_done.html
+      password_reset_email.html
+      password_reset_form.html
+     }
+    }
+   }
+  }
+  comments=comments {
+   __init__.py
+   admin.py
+   feeds.py
+   forms.py
+   managers.py
+   models.py
+   moderation.py
+   signals.py
+   urls.py
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+   templates=templates {
+    comments=comments {
+     400-debug.html
+     approve.html
+     approved.html
+     base.html
+     delete.html
+     deleted.html
+     flag.html
+     flagged.html
+     form.html
+     list.html
+     posted.html
+     preview.html
+    }
+   }
+   templatetags=templatetags {
+    __init__.py
+    comments.py
+   }
+   views=views {
+    __init__.py
+    comments.py
+    moderation.py
+    utils.py
+   }
+  }
+  contenttypes=contenttypes {
+   __init__.py
+   generic.py
+   management.py
+   models.py
+   tests.py
+   views.py
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+  }
+  csrf=csrf {
+   __init__.py
+   middleware.py
+  }
+  databrowse=databrowse {
+   __init__.py
+   datastructures.py
+   sites.py
+   urls.py
+   views.py
+   plugins=plugins {
+    __init__.py
+    calendars.py
+    fieldchoices.py
+    objects.py
+   }
+   templates=templates {
+    databrowse=databrowse {
+     base.html
+     base_site.html
+     calendar_day.html
+     calendar_homepage.html
+     calendar_main.html
+     calendar_month.html
+     calendar_year.html
+     choice_detail.html
+     choice_list.html
+     fieldchoice_detail.html
+     fieldchoice_homepage.html
+     fieldchoice_list.html
+     homepage.html
+     model_detail.html
+     object_detail.html
+    }
+   }
+  }
+  flatpages=flatpages {
+   __init__.py
+   admin.py
+   middleware.py
+   models.py
+   urls.py
+   views.py
+   fixtures=fixtures {
+   }
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+   templatetags=templatetags {
+    __init__.py
+    flatpages.py
+   }
+   tests=tests {
+    __init__.py
+    csrf.py
+    forms.py
+    middleware.py
+    templatetags.py
+    urls.py
+    views.py
+    templates=templates {
+     404.html
+     flatpages=flatpages {
+      default.html
+     }
+     registration=registration {
+      login.html
+     }
+    }
+   }
+  }
+  formtools=formtools {
+   __init__.py
+   models.py
+   preview.py
+   utils.py
+   wizard.py
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+   templates=templates {
+    formtools=formtools {
+     form.html
+     preview.html
+    }
+   }
+   tests=tests {
+    __init__.py
+    urls.py
+    templates=templates {
+     formwizard=formwizard {
+      wizard.html
+     }
+    }
+   }
+  }
+  gis=gis {
+   __init__.py
+   feeds.py
+   measure.py
+   models.py
+   shortcuts.py
+   admin=admin {
+    __init__.py
+    options.py
+    widgets.py
+   }
+   db=db {
+    __init__.py
+    backend=backend {
+     __init__.py
+    }
+    backends=backends {
+     __init__.py
+     adapter.py
+     base.py
+     util.py
+     mysql=mysql {
+      __init__.py
+      base.py
+      creation.py
+      introspection.py
+      operations.py
+     }
+     oracle=oracle {
+      __init__.py
+      adapter.py
+      base.py
+      compiler.py
+      creation.py
+      introspection.py
+      models.py
+      operations.py
+     }
+     postgis=postgis {
+      __init__.py
+      adapter.py
+      base.py
+      creation.py
+      introspection.py
+      models.py
+      operations.py
+     }
+     spatialite=spatialite {
+      __init__.py
+      adapter.py
+      base.py
+      client.py
+      compiler.py
+      creation.py
+      introspection.py
+      models.py
+      operations.py
+     }
+    }
+    models=models {
+     __init__.py
+     aggregates.py
+     fields.py
+     manager.py
+     proxy.py
+     query.py
+     sql=sql {
+      __init__.py
+      aggregates.py
+      compiler.py
+      conversion.py
+      query.py
+      where.py
+     }
+    }
+   }
+   forms=forms {
+    __init__.py
+    fields.py
+   }
+   gdal=gdal {
+    __init__.py
+    base.py
+    datasource.py
+    driver.py
+    envelope.py
+    error.py
+    feature.py
+    field.py
+    geometries.py
+    geomtype.py
+    layer.py
+    libgdal.py
+    srs.py
+    prototypes=prototypes {
+     __init__.py
+     ds.py
+     errcheck.py
+     generation.py
+     geom.py
+     srs.py
+    }
+    tests=tests {
+     __init__.py
+     test_driver.py
+     test_ds.py
+     test_envelope.py
+     test_geom.py
+     test_srs.py
+    }
+   }
+   geometry=geometry {
+    __init__.py
+    regex.py
+    test_data.py
+    backend=backend {
+     __init__.py
+     geos.py
+    }
+   }
+   geos=geos {
+    __init__.py
+    base.py
+    collections.py
+    coordseq.py
+    error.py
+    factory.py
+    geometry.py
+    io.py
+    libgeos.py
+    linestring.py
+    mutable_list.py
+    point.py
+    polygon.py
+    prepared.py
+    prototypes=prototypes {
+     __init__.py
+     coordseq.py
+     errcheck.py
+     geom.py
+     io.py
+     misc.py
+     predicates.py
+     prepared.py
+     threadsafe.py
+     topology.py
+    }
+    tests=tests {
+     __init__.py
+     test_geos.py
+     test_geos_mutation.py
+     test_io.py
+     test_mutable_list.py
+    }
+   }
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+   management=management {
+    __init__.py
+    base.py
+    commands=commands {
+     __init__.py
+     inspectdb.py
+     ogrinspect.py
+    }
+   }
+   maps=maps {
+    __init__.py
+    google=google {
+     __init__.py
+     gmap.py
+     overlays.py
+     zoom.py
+    }
+    openlayers=openlayers {
+     __init__.py
+    }
+   }
+   sitemaps=sitemaps {
+    __init__.py
+    georss.py
+    kml.py
+    views.py
+   }
+   templates=templates {
+    gis=gis {
+     admin=admin {
+      openlayers.html
+      osm.html
+      openlayers.js
+      osm.js
+     }
+     google=google {
+      google-map.html
+      google-map.js
+      google-multi.js
+      google-single.js
+     }
+     kml=kml {
+     }
+     sitemaps=sitemaps {
+     }
+    }
+   }
+   tests=tests {
+    __init__.py
+    test_geoforms.py
+    test_geoip.py
+    test_measure.py
+    test_spatialrefsys.py
+    utils.py
+    data=data {
+     cities=cities {
+     }
+     counties=counties {
+     }
+     interstates=interstates {
+     }
+     invalid=invalid {
+     }
+     test_point=test_point {
+     }
+     test_poly=test_poly {
+     }
+     test_vrt=test_vrt {
+     }
+    }
+    distapp=distapp {
+     __init__.py
+     models.py
+     tests.py
+     fixtures=fixtures {
+     }
+    }
+    geo3d=geo3d {
+     __init__.py
+     models.py
+     tests.py
+     views.py
+    }
+    geoapp=geoapp {
+     __init__.py
+     feeds.py
+     models.py
+     sitemaps.py
+     test_feeds.py
+     test_regress.py
+     test_sitemaps.py
+     tests.py
+     urls.py
+     fixtures=fixtures {
+     }
+    }
+    geogapp=geogapp {
+     __init__.py
+     models.py
+     tests.py
+     fixtures=fixtures {
+     }
+    }
+    layermap=layermap {
+     __init__.py
+     models.py
+     tests.py
+    }
+    relatedapp=relatedapp {
+     __init__.py
+     models.py
+     tests.py
+     fixtures=fixtures {
+     }
+    }
+   }
+   utils=utils {
+    __init__.py
+    geoip.py
+    layermapping.py
+    ogrinfo.py
+    ogrinspect.py
+    srs.py
+    wkt.py
+   }
+  }
+  humanize=humanize {
+   __init__.py
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+   templatetags=templatetags {
+    __init__.py
+    humanize.py
+   }
+  }
+  localflavor=localflavor {
+   __init__.py
+   ar=ar {
+    __init__.py
+    ar_provinces.py
+    forms.py
+   }
+   at=at {
+    __init__.py
+    at_states.py
+    forms.py
+   }
+   au=au {
+    __init__.py
+    au_states.py
+    forms.py
+   }
+   be=be {
+    __init__.py
+    be_provinces.py
+    be_regions.py
+    forms.py
+   }
+   br=br {
+    __init__.py
+    br_states.py
+    forms.py
+   }
+   ca=ca {
+    __init__.py
+    ca_provinces.py
+    forms.py
+   }
+   ch=ch {
+    __init__.py
+    ch_states.py
+    forms.py
+   }
+   cl=cl {
+    __init__.py
+    cl_regions.py
+    forms.py
+   }
+   cz=cz {
+    __init__.py
+    cz_regions.py
+    forms.py
+   }
+   de=de {
+    __init__.py
+    de_states.py
+    forms.py
+   }
+   es=es {
+    __init__.py
+    es_provinces.py
+    es_regions.py
+    forms.py
+   }
+   fi=fi {
+    __init__.py
+    fi_municipalities.py
+    forms.py
+   }
+   fr=fr {
+    __init__.py
+    forms.py
+    fr_department.py
+   }
+   generic=generic {
+    __init__.py
+    forms.py
+   }
+   id=id {
+    __init__.py
+    forms.py
+    id_choices.py
+   }
+   ie=ie {
+    __init__.py
+    forms.py
+    ie_counties.py
+   }
+   il=il {
+    __init__.py
+    forms.py
+   }
+   in_=in_ {
+    __init__.py
+    forms.py
+    in_states.py
+   }
+   is_=is_ {
+    __init__.py
+    forms.py
+    is_postalcodes.py
+   }
+   it=it {
+    __init__.py
+    forms.py
+    it_province.py
+    it_region.py
+    util.py
+   }
+   jp=jp {
+    __init__.py
+    forms.py
+    jp_prefectures.py
+   }
+   kw=kw {
+    __init__.py
+    forms.py
+   }
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+   mx=mx {
+    __init__.py
+    forms.py
+    mx_states.py
+   }
+   nl=nl {
+    __init__.py
+    forms.py
+    nl_provinces.py
+   }
+   no=no {
+    __init__.py
+    forms.py
+    no_municipalities.py
+   }
+   pe=pe {
+    __init__.py
+    forms.py
+    pe_region.py
+   }
+   pl=pl {
+    __init__.py
+    forms.py
+    pl_administrativeunits.py
+    pl_voivodeships.py
+   }
+   pt=pt {
+    __init__.py
+    forms.py
+   }
+   ro=ro {
+    __init__.py
+    forms.py
+    ro_counties.py
+   }
+   se=se {
+    __init__.py
+    forms.py
+    se_counties.py
+    utils.py
+   }
+   sk=sk {
+    __init__.py
+    forms.py
+    sk_districts.py
+    sk_regions.py
+   }
+   tr=tr {
+    __init__.py
+    forms.py
+    tr_provinces.py
+   }
+   uk=uk {
+    __init__.py
+    forms.py
+    uk_regions.py
+   }
+   us=us {
+    __init__.py
+    forms.py
+    models.py
+    us_states.py
+   }
+   uy=uy {
+    __init__.py
+    forms.py
+    util.py
+    uy_departaments.py
+   }
+   za=za {
+    __init__.py
+    forms.py
+    za_provinces.py
+   }
+  }
+  markup=markup {
+   __init__.py
+   models.py
+   tests.py
+   templatetags=templatetags {
+    __init__.py
+    markup.py
+   }
+  }
+  messages=messages {
+   __init__.py
+   api.py
+   constants.py
+   context_processors.py
+   middleware.py
+   models.py
+   utils.py
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+   storage=storage {
+    __init__.py
+    base.py
+    cookie.py
+    fallback.py
+    session.py
+    user_messages.py
+   }
+   tests=tests {
+    __init__.py
+    base.py
+    cookie.py
+    fallback.py
+    middleware.py
+    session.py
+    urls.py
+    user_messages.py
+   }
+  }
+  redirects=redirects {
+   __init__.py
+   admin.py
+   middleware.py
+   models.py
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+  }
+  sessions=sessions {
+   __init__.py
+   middleware.py
+   models.py
+   tests.py
+   backends=backends {
+    __init__.py
+    base.py
+    cache.py
+    cached_db.py
+    db.py
+    file.py
+   }
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+  }
+  sitemaps=sitemaps {
+   __init__.py
+   models.py
+   views.py
+   management=management {
+    __init__.py
+    commands=commands {
+     __init__.py
+     ping_google.py
+    }
+   }
+   templates=templates {
+   }
+   tests=tests {
+    __init__.py
+    basic.py
+    urls.py
+    templates=templates {
+    }
+   }
+  }
+  sites=sites {
+   __init__.py
+   admin.py
+   management.py
+   managers.py
+   models.py
+   tests.py
+   locale=locale {
+    ar=ar {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    az=az {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bg=bg {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bn=bn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    bs=bs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ca=ca {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cs=cs {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    cy=cy {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    da=da {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    de=de {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    el=el {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en=en {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    en_GB=en_GB {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es=es {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_AR=es_AR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    es_MX=es_MX {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    et=et {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    eu=eu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fa=fa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fi=fi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fr=fr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    fy_NL=fy_NL {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ga=ga {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    gl=gl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    he=he {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hi=hi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hr=hr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    hu=hu {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    id=id {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    is=is {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    it=it {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ja=ja {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ka=ka {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    km=km {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    kn=kn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ko=ko {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lt=lt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    lv=lv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mk=mk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ml=ml {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    mn=mn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nb=nb {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nl=nl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    nn=nn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    no=no {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pa=pa {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pl=pl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt=pt {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    pt_BR=pt_BR {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ro=ro {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ru=ru {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sk=sk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sl=sl {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sq=sq {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr=sr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sr_Latn=sr_Latn {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    sv=sv {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ta=ta {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    te=te {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    th=th {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    tr=tr {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    uk=uk {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    ur=ur {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    vi=vi {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_CN=zh_CN {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+    zh_TW=zh_TW {
+     LC_MESSAGES=LC_MESSAGES {
+     }
+    }
+   }
+  }
+  staticfiles=staticfiles {
+   __init__.py
+   finders.py
+   handlers.py
+   models.py
+   storage.py
+   urls.py
+   utils.py
+   views.py
+   management=management {
+    __init__.py
+    commands=commands {
+     __init__.py
+     collectstatic.py
+     findstatic.py
+     runserver.py
+    }
+   }
+  }
+  syndication=syndication {
+   __init__.py
+   feeds.py
+   views.py
+  }
+  webdesign=webdesign {
+   __init__.py
+   lorem_ipsum.py
+   models.py
+   tests.py
+   templatetags=templatetags {
+    __init__.py
+    webdesign.py
+   }
+  }
+ }
+ core=core {
+  __init__.py
+  context_processors.py
+  exceptions.py
+  paginator.py
+  signals.py
+  template_loader.py
+  urlresolvers.py
+  validators.py
+  xheaders.py
+  cache=cache {
+   __init__.py
+   backends=backends {
+    __init__.py
+    base.py
+    db.py
+    dummy.py
+    filebased.py
+    locmem.py
+    memcached.py
+   }
+  }
+  files=files {
+   __init__.py
+   base.py
+   images.py
+   locks.py
+   move.py
+   storage.py
+   temp.py
+   uploadedfile.py
+   uploadhandler.py
+   utils.py
+  }
+  handlers=handlers {
+   __init__.py
+   base.py
+   modpython.py
+   profiler-hotshot.py
+   wsgi.py
+  }
+  mail=mail {
+   __init__.py
+   message.py
+   utils.py
+   backends=backends {
+    __init__.py
+    base.py
+    console.py
+    dummy.py
+    filebased.py
+    locmem.py
+    smtp.py
+   }
+  }
+  management=management {
+   __init__.py
+   base.py
+   color.py
+   sql.py
+   validation.py
+   commands=commands {
+    __init__.py
+    cleanup.py
+    compilemessages.py
+    createcachetable.py
+    dbshell.py
+    diffsettings.py
+    dumpdata.py
+    flush.py
+    inspectdb.py
+    loaddata.py
+    makemessages.py
+    reset.py
+    runfcgi.py
+    runserver.py
+    shell.py
+    sql.py
+    sqlall.py
+    sqlclear.py
+    sqlcustom.py
+    sqlflush.py
+    sqlindexes.py
+    sqlinitialdata.py
+    sqlreset.py
+    sqlsequencereset.py
+    startapp.py
+    startproject.py
+    syncdb.py
+    test.py
+    testserver.py
+    validate.py
+   }
+  }
+  serializers=serializers {
+   __init__.py
+   base.py
+   json.py
+   python.py
+   pyyaml.py
+   xml_serializer.py
+  }
+  servers=servers {
+   __init__.py
+   basehttp.py
+   fastcgi.py
+  }
+ }
+ db=db {
+  __init__.py
+  transaction.py
+  utils.py
+  backends=backends {
+   __init__.py
+   creation.py
+   signals.py
+   util.py
+   dummy=dummy {
+    __init__.py
+    base.py
+   }
+   mysql=mysql {
+    __init__.py
+    base.py
+    client.py
+    compiler.py
+    creation.py
+    introspection.py
+    validation.py
+   }
+   oracle=oracle {
+    __init__.py
+    base.py
+    client.py
+    compiler.py
+    creation.py
+    introspection.py
+   }
+   postgresql=postgresql {
+    __init__.py
+    base.py
+    client.py
+    creation.py
+    introspection.py
+    operations.py
+    version.py
+   }
+   postgresql_psycopg2=postgresql_psycopg2 {
+    __init__.py
+    base.py
+    introspection.py
+   }
+   sqlite3=sqlite3 {
+    __init__.py
+    base.py
+    client.py
+    creation.py
+    introspection.py
+   }
+  }
+  models=models {
+   __init__.py
+   aggregates.py
+   base.py
+   deletion.py
+   expressions.py
+   loading.py
+   manager.py
+   options.py
+   query.py
+   query_utils.py
+   related.py
+   signals.py
+   fields=fields {
+    __init__.py
+    files.py
+    proxy.py
+    related.py
+    subclassing.py
+   }
+   sql=sql {
+    __init__.py
+    aggregates.py
+    compiler.py
+    constants.py
+    datastructures.py
+    expressions.py
+    query.py
+    subqueries.py
+    where.py
+   }
+  }
+ }
+ dispatch=dispatch {
+  __init__.py
+  dispatcher.py
+  saferef.py
+ }
+ forms=forms {
+  __init__.py
+  fields.py
+  forms.py
+  formsets.py
+  models.py
+  util.py
+  widgets.py
+  extras=extras {
+   __init__.py
+   widgets.py
+  }
+ }
+ http=http {
+  __init__.py
+  multipartparser.py
+  utils.py
+ }
+ middleware=middleware {
+  __init__.py
+  cache.py
+  common.py
+  csrf.py
+  doc.py
+  gzip.py
+  http.py
+  locale.py
+  transaction.py
+ }
+ shortcuts=shortcuts {
+  __init__.py
+ }
+ template=template {
+  __init__.py
+  base.py
+  context.py
+  debug.py
+  defaultfilters.py
+  defaulttags.py
+  loader.py
+  loader_tags.py
+  response.py
+  smartif.py
+  loaders=loaders {
+   __init__.py
+   app_directories.py
+   cached.py
+   eggs.py
+   filesystem.py
+  }
+ }
+ templatetags=templatetags {
+  __init__.py
+  cache.py
+  future.py
+  i18n.py
+  l10n.py
+  static.py
+ }
+ test=test {
+  __init__.py
+  _doctest.py
+  client.py
+  signals.py
+  simple.py
+  testcases.py
+  utils.py
+ }
+ utils=utils {
+  __init__.py
+  _os.py
+  _threading_local.py
+  autoreload.py
+  cache.py
+  checksums.py
+  copycompat.py
+  crypto.py
+  daemonize.py
+  datastructures.py
+  dateformat.py
+  dates.py
+  datetime_safe.py
+  decorators.py
+  dictconfig.py
+  encoding.py
+  feedgenerator.py
+  formats.py
+  functional.py
+  hashcompat.py
+  html.py
+  http.py
+  importlib.py
+  itercompat.py
+  log.py
+  module_loading.py
+  numberformat.py
+  regex_helper.py
+  safestring.py
+  stopwords.py
+  synch.py
+  termcolors.py
+  text.py
+  timesince.py
+  tree.py
+  tzinfo.py
+  version.py
+  xmlutils.py
+  simplejson=simplejson {
+   __init__.py
+   decoder.py
+   encoder.py
+   scanner.py
+   tool.py
+  }
+  translation=translation {
+   __init__.py
+   trans_null.py
+   trans_real.py
+  }
+  unittest=unittest {
+   __init__.py
+   __main__.py
+   case.py
+   collector.py
+   compatibility.py
+   loader.py
+   main.py
+   result.py
+   runner.py
+   signals.py
+   suite.py
+   util.py
+  }
+ }
+ views=views {
+  __init__.py
+  csrf.py
+  debug.py
+  defaults.py
+  i18n.py
+  static.py
+  decorators=decorators {
+   __init__.py
+   cache.py
+   csrf.py
+   gzip.py
+   http.py
+   vary.py
+  }
+  generic=generic {
+   __init__.py
+   base.py
+   create_update.py
+   date_based.py
+   dates.py
+   detail.py
+   edit.py
+   list.py
+   list_detail.py
+   simple.py
+  }
+ }
+}
+
+# vim: fdl=1

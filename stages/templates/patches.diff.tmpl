@@ -1,0 +1,10 @@
+--- virtualenv/lib/python{{python_version}}/site-packages/fiber/utils/fields.py	2011-10-18 16:21:05.000000000 +0200
++++ virtualenv/lib/python{{python_version}}/site-packages/fiber/utils/fields.py	2011-10-18 16:33:38.000000000 +0200
+@@ -60,6 +60,7 @@
+ try:
+     from south.modelsinspector import add_introspection_rules
+     add_introspection_rules([], [
++        '^fiber\.utils\.fields\.FiberURLField',
+         '^fiber\.utils\.fields\.FiberMarkupField',
+         '^fiber\.utils\.fields\.FiberHTMLField'
+     ])

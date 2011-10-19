@@ -1,0 +1,23 @@
+{{py:
+
+import os
+projects_dir = os.path.abspath('../..')
+project_dir  = os.path.join(projects_dir, project)
+
+}}
+
+<VirtualHost 127.0.0.1:81>
+    ServerName {{domain}}
+
+    WSGIScriptAlias / {{project_dir}}/stages/{{stage}}/wsgi.py
+    WSGIDaemonProcess {{project}}_{{stage}} user=django group=django processes=1 threads=5 umask=0002 display-name=%{GROUP}
+    WSGIProcessGroup {{project}}_{{stage}}
+
+    <Directory "{{project_dir}}">
+        Allow from all
+    </Directory>
+
+    ErrorDocument 500 {{project_dir}}/templates/500.html
+
+    CustomLog /var/log/apache2/{{project}}.log combined
+</VirtualHost>

@@ -1,0 +1,49 @@
+project:  null
+DEBUG:    False
+TEST:     False
+domains:  []
+
+stages:
+
+  localhost:
+    DEBUG:      True
+    DATABASES:
+      default:
+        ENGINE:  sqlite3
+        NAME:    project.db
+    domain:          localhost:8000
+    ip:              127.0.0.1
+    python_version:  2.7
+    EMAIL_PORT:      27225
+
+  trumpetcms_nl:
+    DEBUG:      True
+    DATABASES:
+      default:
+        ENGINE:  postgresql_psycopg2
+        NAME:    project
+    domain:          project.trumpetcms.nl
+    domains:         [alias.trumpetcms.nl]
+    ip:              89.31.96.72
+    python_version:  2.6
+
+  project_nl:
+    DEBUG:      False
+    DATABASES:
+      default:
+        ENGINE:  postgresql_psycopg2
+        NAME:    project
+    domain:          localhost:8000
+    ip:              127.0.0.1
+    python_version:  2.7
+    EMAIL_PORT:      27225
+
+  test:
+    DEBUG:  True
+    TEST:   True
+    DATABASES:
+      default:
+        ENGINE:  sqlite3
+    domain:          localhost:  8000
+    ip:              127.0.0.1
+    python_version:  2.7

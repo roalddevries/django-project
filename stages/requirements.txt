@@ -1,0 +1,3 @@
+Paste==1.7.5.1
+PyYAML==3.10
+-e hg+https://bitbucket.org/ianb/tempita@167323789bebc7cfa6aaac896468def07a48ddd8#egg=Tempita-tip

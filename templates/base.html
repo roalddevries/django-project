@@ -1,0 +1,33 @@
+{% load fiber_tags %}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Barter Your Business</title>
+    
+    <link rel='stylesheet' type='text/css' href='{{ STATIC_URL }}css/style.css' />
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id='container'>
+        <div id='logo'>
+            <a href='/'>
+                <h1>Barter Your Business</h1>
+                <img src='{{ STATIC_URL }}images/byb.png' alt='Barter Your Business' />
+            </a>
+        </div>
+        
+        <div id='menu'>
+            {% show_menu "main_menu" 1 2 %}
+        </div>
+        
+		{% block content %}
+			{% show_page_content 'content' %}
+		{% endblock %}
+    </div>
+    
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js"></script>
+</body>
+</html>
