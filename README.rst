@@ -4,8 +4,7 @@ To install, run::
 
     createdb <project> # only first time, of course
     make               # creates virtualenv + dependencies, static and stages
-    make initdb        # only first time, but preferably shouldn't be necessary
-    sudo make reload   # reloads apache and nginx; 'make restart' restarts both, 'make refresh' touches the wsgi file
+    sudo make reload   # reloads apache and nginx; 'make restart' restarts both, 'make refresh' touches the wsgi file (and doesn't need sudo)
 
 
 Project setup
