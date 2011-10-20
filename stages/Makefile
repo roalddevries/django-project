@@ -1,3 +1,5 @@
+PROJECT = project
+
 PYBIN   = virtualenv/bin
 PYLIB   = virtualenv/lib/python2.7/site-packages
 PYSRC   = virtualenv/src
@@ -26,14 +28,14 @@ current:
 refresh: current
 	touch $</wsgi.py
 
-/etc/%/sites-available/barteryourbusiness: %.conf
+/etc/%/sites-available/$(PROJECT): %.conf
 	@echo PWD: $(PWD)
-	ln -fs /Users/apple/Projects/barteryourbusiness/stages/current/$< $@
+	ln -fs $(PWD)/current/$< $@
 
-/etc/%/sites-enabled/barteryourbusiness: /etc/%/sites-available/barteryourbusiness
+/etc/%/sites-enabled/$(PROJECT): /etc/%/sites-available/$(PROJECT)
 	ln -fs $< $@
 
-reload restart: /etc/apache2/sites-enabled/barteryourbusiness /etc/nginx/sites-enabled/barteryourbusiness
+reload restart: /etc/apache2/sites-enabled/$(PROJECT) /etc/nginx/sites-enabled/$(PROJECT)
 	nginx -t && /etc/init.d/nginx $@
 	/etc/init.d/apache2 $@
 
