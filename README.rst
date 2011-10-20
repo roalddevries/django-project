@@ -1,10 +1,28 @@
 :Dependencies: Python>=2.6
 
-To install, run::
+Install
+=======
 
-    createdb <project> # only first time, of course
-    make               # creates virtualenv + dependencies, static and stages
-    sudo make reload   # reloads apache and nginx; 'make restart' restarts both, 'make refresh' touches the wsgi file (and doesn't need sudo)
+Development
+-----------
+
+To install, first change the first line of `stages/Makefile`, then edit `stages/data.yaml`, and the run::
+
+    make # creates virtualenv + dependencies, static and stages
+
+Test server
+-----------
+
+On a server using postgresql, you have to install psycopg2 into the virtualenv manually. Do::
+
+	createdb <project> # only first time, of course
+	make virtualenv    # creates virtualenv
+	source virtualenv/bin/activate
+	pip install psycopg2
+	make
+	sudo make reload   # reloads apache and nginx
+	                   # 'make restart' restarts both,
+					   # 'make refresh' touches the wsgi file (and doesn't need sudo)
 
 
 Project setup
